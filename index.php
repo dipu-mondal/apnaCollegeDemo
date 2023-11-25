@@ -16,6 +16,14 @@ echo '</pre><br><br>';
 
 
 
+//-------USEFUL FUNCTION FOR MAKING MULTIPLE CHOICE APP--------//
+$multiple_choice = array('Bangladesh', 'India', 'Nepal', 'Bhutan');
+shuffle($multiple_choice);
+echo '<pre>';
+print_r($multiple_choice);
+echo '</pre><br>';
+//-------USEFUL FUNCTION FOR MAKING MULTIPLE CHOICE APP--------//
+
 
 
 
