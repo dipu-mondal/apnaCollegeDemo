@@ -25,6 +25,13 @@ echo '</pre><br>';
 //-------USEFUL FUNCTION FOR MAKING MULTIPLE CHOICE APP--------//
 
 
+$numbers = array(2,3,4,5,6,3,5,6,7,8);
+function adder($m = 0, $incomming){
+    $m = $m + $incomming;
+    return $m;
+}
+$summation = array_reduce($numbers, 'adder');
+echo $summation;
 
 
 
