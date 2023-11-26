@@ -25,13 +25,48 @@ echo '</pre><br>';
 //-------USEFUL FUNCTION FOR MAKING MULTIPLE CHOICE APP--------//
 
 
+//-------USEFUL FUNCTION FOR SINGLE OUTCOME FROM ARRAY--------//
 $numbers = array(2,3,4,5,6,3,5,6,7,8);
 function adder($m = 0, $incomming){
     $m = $m + $incomming;
     return $m;
 }
 $summation = array_reduce($numbers, 'adder');
-echo $summation;
+echo $summation . "<br>";
+//-------USEFUL FUNCTION FOR SINGLE OUTCOME FROM ARRAY--------//
+
+
+
+//----------ARRAY TRAVERSING--------------------------------//
+$fruits = array('apple', 'orange', 'banana', 'grape', 'lime'); 
+echo "Name of the current item: ".strtoupper(current($fruits)). "<br>";
+echo "Name of the current key: ".key($fruits). "<br><br>";
+
+next($fruits);
+echo "Name of the current item: ".strtoupper(current($fruits)). "<br>";
+echo "Name of the current key: ".key($fruits). "<br><br>";
+
+next($fruits);
+echo "Name of the current item: ".strtoupper(current($fruits)). "<br>";
+echo "Name of the current key: ".key($fruits). "<br><br>";
+
+prev($fruits);
+echo "Name of the current item: ".strtoupper(current($fruits)). "<br>";
+echo "Name of the current key: ".key($fruits). "<br><br>";
+
+end($fruits);
+echo "Name of the current item: ".strtoupper(current($fruits)). "<br>";
+echo "Name of the current key: ".key($fruits). "<br><br>";
+
+
+reset($fruits);
+echo "Name of the current item: ".strtoupper(current($fruits)). "<br>";
+echo "Name of the current key: ".key($fruits). "<br><br>";
+// echo '<pre>';
+// print_r(each($fruits), true);
+// echo '</pre>';
+
+//---------ARRAY TRAVERSING--------------------------------//
 
 
 
