@@ -70,4 +70,14 @@ echo "Name of the current key: ".key($fruits). "<br><br>";
 
 
 
+//------------------ADVANCE OPERATION WITH LIST FUNCTIONS---------//
+$names = array('one' => 'one', 'two' => 'two', 'three' => 'three');
+list('one'=> $a, 'two'=> $b,'three'=> $c) = $names;
+echo "$a <br> $b <br> $c <br>";
+
+$vegi = array('Couliflower', 'Cucumber', 'Potato');
+list($one, $two, $three) = $vegi;
+echo "$one <br> $two <br> $three <br>";
+//------------------ADVANCE OPERATION WITH LIST FUNCTIONS---------//
+
 ?>
