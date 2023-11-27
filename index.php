@@ -51,14 +51,14 @@
 
 
 //----------PHP EXPLODE FUNCTINO---------------//
-$str = 'My name is dipu kumar mondal';
-$newArray = explode(' ',$str);
-echo '<pre>';
-print_r($newArray);
-echo '</pre><br>';
+// $str = 'My name is dipu kumar mondal';
+// $newArray = explode(' ',$str);
+// echo '<pre>';
+// print_r($newArray);
+// echo '</pre><br>';
 
-$str = implode(' ', $newArray);
-echo $str.'.';
+// $str = implode(' ', $newArray);
+// echo $str.'.';
 //----------PHP EXPLODE FUNCTINO---------------//
 
 
