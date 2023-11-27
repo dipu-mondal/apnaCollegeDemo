@@ -82,21 +82,21 @@
 
 
 //-----------PHP EXPLODE FUNCTION-------------//
-$str = 'My name is dipu mondal';
-$newArray = explode(' ', $str);
-echo '<pre>';
-print_r($newArray);
-echo '</pre>';
+// $str = 'My name is dipu mondal';
+// $newArray = explode(' ', $str);
+// echo '<pre>';
+// print_r($newArray);
+// echo '</pre>';
 //-----------PHP EXPLODE FUNCTION-------------//
 
 
 
 //--------------STRING COUNTING FUNCTIONS---------//
-$str  = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt voluptate quisquam perferendis neque iusto. Dignissimos delectus repellat quia nulla aspernatur harum vel assumenda recusandae eligendi esse dicta nihil, tempore nobis!';
+// $str  = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt voluptate quisquam perferendis neque iusto. Dignissimos delectus repellat quia nulla aspernatur harum vel assumenda recusandae eligendi esse dicta nihil, tempore nobis!';
 
-echo str_word_count($str).'<br>';
-echo strlen($str).'<br>';
-echo substr_count($str, 'Lorem');
+// echo str_word_count($str).'<br>';
+// echo strlen($str).'<br>';
+// echo substr_count($str, 'Lorem');
 //--------------STRING COUNTING FUNCTIONS---------//
 
 
