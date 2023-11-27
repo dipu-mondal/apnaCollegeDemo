@@ -80,4 +80,14 @@
 // echo "$one <br> $two <br> $three <br>";
 //------------------ADVANCE OPERATION WITH LIST FUNCTIONS---------//
 
+
+//-----------PHP EXPLODE FUNCTION-------------//
+$str = 'My name is dipu mondal';
+$newArray = explode(' ', $str);
+echo '<pre>';
+print_r($newArray);
+echo '</pre>';
+//-----------PHP EXPLODE FUNCTION-------------//
+
+
 ?>
