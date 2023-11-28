@@ -101,5 +101,15 @@ echo '</pre>';
 
 
 
-echo 'this is testing purpose dipu mondal.';
+//---------PHP SUBSTRING REPLACE-------------//
+$email = 'dipumondalsatkhira@gmail.com';
+echo substr_replace($email, '.......', 5 , -8);
+//---------PHP SUBSTRING REPLACE-------------//
+
+
+
+
+
+
+
 ?>
