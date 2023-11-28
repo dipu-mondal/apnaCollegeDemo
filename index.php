@@ -81,13 +81,25 @@
 //------------------ADVANCE OPERATION WITH LIST FUNCTIONS---------//
 
 
-//-----------PHP EXPLODE FUNCTION-------FOR CONFLICT TRY------//
-// $str = 'My name is dipu mondal';
-// $newArray = explode(' ', $str);
-// echo '<pre>';
-// print_r($newArray);
-// echo '</pre>';
+//-----------PHP EXPLODE FUNCTION-------------//
+$str = 'My name is dipu mondal';
+$newArray = explode(' ', $str);
+echo '<pre>';
+print_r($newArray);
+echo '</pre>';
 //-----------PHP EXPLODE FUNCTION-------------//
 
 
+
+//--------------STRING COUNTING FUNCTIONS---------//
+// $str  = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt voluptate quisquam perferendis neque iusto. Dignissimos delectus repellat quia nulla aspernatur harum vel assumenda recusandae eligendi esse dicta nihil, tempore nobis!';
+
+// echo str_word_count($str).'<br>';
+// echo strlen($str).'<br>';
+// echo substr_count($str, 'Lorem');
+//--------------STRING COUNTING FUNCTIONS---------//
+
+
+
+echo 'this is testing purpose dipu mondal.';
 ?>
