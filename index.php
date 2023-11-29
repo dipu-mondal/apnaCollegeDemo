@@ -106,11 +106,4 @@ $email = 'dipumondalsatkhira@gmail.com';
 echo substr_replace($email, '.......', 5 , -8);
 //---------PHP SUBSTRING REPLACE-------------//
 
-
-
-
-
-
-
->>>>>>> 692ae1260443723351f666439a89050392f82fac
 ?>
