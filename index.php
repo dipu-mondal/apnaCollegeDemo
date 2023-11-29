@@ -102,8 +102,27 @@
 
 
 //---------PHP SUBSTRING REPLACE-------------//
-$email = 'dipumondalsatkhira@gmail.com';
-echo substr_replace($email, '.......', 5 , -8);
+// $email = 'dipumondalsatkhira@gmail.com';
+// echo substr_replace($email, '.......', 5 , -8);
 //---------PHP SUBSTRING REPLACE-------------//
+
+
+
+//----------PHP STRING COMPARISON FUNCTIONS---------//
+// $name1 = 'Dipu Mondal';
+// $name2 = 'Hero Hondal';
+// similar_text($name1, $name2, $percentage);
+// echo round($percentage, 2). '%';
+//----------PHP STRING COMPARISON FUNCTIONS---------//
+
+
+//---------PHP PADDING FUNCTIONS---------//
+// $email = 'dipumondalsatkhira@gmail.com';
+// echo str_pad(substr($email, -15), 17, '*', STR_PAD_LEFT);
+//---------PHP PADDING FUNCTIONS---------//
+
+
+
+
 
 ?>
