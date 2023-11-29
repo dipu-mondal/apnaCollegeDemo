@@ -122,6 +122,14 @@
 //---------PHP PADDING FUNCTIONS---------//
 
 
+//----------PHP STRING TRIMING FUNCTION------------//
+// $string = 'Dipu Mondal &*';
+// $charList = '-_+!@$%^&* ';
+// echo trim($string, $charList);
+//----------PHP STRING TRIMING FUNCTION------------//
+
+
+
 
 
 
