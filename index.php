@@ -290,8 +290,7 @@ echo '<br>';
 $date_final = date_sub(date_create('3rd december 2023'), date_interval_create_from_date_string('10 days'));
 echo date_format($date_final, "l jS F Y");
 echo '<br>';
-echo '<br>';
-echo '<br>';
+
 
 
 //shorter version of date_modify() function working as date_add() function
@@ -326,6 +325,67 @@ print_r(date_parse_from_format('jS F Y','03rd september 2023'));
 //both parameters will be same to same;
 //should not be used as it is more complex
 echo '</pre><br>';
+
+
+
+
+
+
+/*
+strtotime() function takes DATE STRING as parameter and returns TIMESTAMP
+so making open echo will be meaningless. As the date() function used TIMESTAMP so we can use date() function to 
+show the result
+*/
+
+echo date('jS F Y', strtotime('+1 month'));
+echo '<br>';
+echo date('jS F Y', strtotime('last monday'));
+echo '<br>';
+echo date('jS F Y', strtotime('first wednesday of next month'));
+echo '<br>';
+echo date('jS F Y', strtotime('+1 year'));
+echo '<br>';
+
+
+
+
+
+/*
+Time zone function
+2 methods of setting/geting time zone:
+(1.1) date_default_timezone_set()
+(1.2) date_default_timezone_get()
+
+(2.1) timezone_open()
+(2.2) timezone_name_get();
+*/
+
+date_default_timezone_set('Asia/Dhaka');
+echo date_default_timezone_get().'<br>';
+
+//Second method of setting and getting timezone;
+$time_zone_obj = timezone_open('Asia/Dhaka');
+echo timezone_name_get($time_zone_obj).'<br>';
+
+
+//Geting location from time zone object
+echo '<pre>';
+print_r(timezone_location_get($time_zone_obj));
+echo '</pre><br>';
+
+//timezone identifier list//
+echo '<pre>';
+print_r(timezone_identifiers_list());
+echo '</pre><br>';
+
+
+
+
+
+
+
+
+
 
 
 
