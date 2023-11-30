@@ -309,4 +309,25 @@ echo '<br>';
 
 
 
+
+
+
+/*
+date_parse() function takes DATE STRING as parameter and returns array.
+date_parse_from_format() function takes two parameters first one is FORMAT and second one is STRING DATE (unique style format)
+it also returns array;
+*/
+echo '<pre>';
+print_r(date_parse('3rd december 2023'));
+echo '</pre><br>';
+
+echo '<pre>';
+print_r(date_parse_from_format('jS F Y','03rd september 2023'));
+//both parameters will be same to same;
+//should not be used as it is more complex
+echo '</pre><br>';
+
+
+
+
 ?>
