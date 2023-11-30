@@ -133,6 +133,17 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 /*
 Required. Specifies the format of the outputted date string. The following characters can be used:
 d - The day of the month (from 01 to 31)
@@ -252,6 +263,49 @@ echo '<pre>';
 print_r(date_diff($date_first, $date_second));
 echo '</pre><br>';
 echo date_diff($date_first, $date_second)->days;
+echo '<br>';
+echo '<br>';
+
+
+
+
+/*
+date_add(), date_sub() function takes two date object and both are from date object finally returns object
+1st parameter is from date object and second also date objects
+so we can get help from date_create() function because it returns object
+as date_add() and date_sub() function returns object so we can get help from date_format() function to show on the screen.
+*/
+
+$date_final = date_create('3rd december 2023');
+date_add($date_final, date_interval_create_from_date_string('10 days'));
+echo date_format($date_final, "l jS F Y");
+echo '<br>';
+//shorter version of date_add() function
+$date_final = date_add(date_create('3rd december 2023'), date_interval_create_from_date_string('10 days'));
+echo date_format($date_final, "l jS F Y");
+echo '<br>';
+
+
+//shorter version of date_sub() function
+$date_final = date_sub(date_create('3rd december 2023'), date_interval_create_from_date_string('10 days'));
+echo date_format($date_final, "l jS F Y");
+echo '<br>';
+echo '<br>';
+echo '<br>';
+
+
+//shorter version of date_modify() function working as date_add() function
+echo "Example of date modify function <br>";
+$date_final = date_modify(date_create('3rd december 2023'), '10 days');
+echo date_format($date_final, "l jS F Y");
+echo '<br>';
+
+
+//shorter version of date_modify() function working as date_add() function
+echo "Example of date modify function <br>";
+$date_final = date_modify(date_create('3rd december 2023'), '10 days');
+echo date_format($date_final, "l jS F Y");
+echo '<br>';
 
 
 
